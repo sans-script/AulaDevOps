@@ -1,0 +1,41 @@
+<!-- container principal -->
+<div class=" w-screen h-screen   flex" >
+  <!-- container amarelo  -->
+ <div class="flex flex-row w-full h-full  bg-[#FFC627] justify-center items-center">
+
+  <!-- informação login -->
+  <div class="flex flex-col h-80 w-80 ">
+  <app-icon-stockee-logo-bw class="mb-12"></app-icon-stockee-logo-bw>
+  <h1 class="text-black font-['Sora'] text-5xl font-extrabold  leading-[1.2] mb-6">Ótimo vê-lo por aqui!</h1>
+  <small class="
+    text-black
+    text-sm
+    font-normal
+    font-['Sora']
+    leading-snug">Você pode entrar na Stockee<br>
+  usando uma conta já existente. </small>
+  </div>
+ </div>
+ <!-- container do login -->
+  <div class="flex flex-col w-full h-full   justify-center items-center ">
+
+  <h1 class="text-stone-600
+  text-3xl
+  font-extrabold
+  font-['Sora']
+  leading-10">Faça o Login com os <br> seus dados</h1>
+  <!-- container formulario -->
+  <form class="flex flex-col h-96 w-full items-center justify-center" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <input type="text" name="" id="" class="w-96 h-12 bg-[#F2F2F2] active:outline-[0.1px] outline-yellow-300 mb-9" formControlName="email">
+    <input type="text" name="" id="" class="w-96 h-12 bg-[#F2F2F2] active:outline-[0.1px] outline-yellow-300 mb-3" formControlName="senha">
+    <a class="ml-[13.5rem] text-neutral-500
+    text-xs
+    font-bold
+    font-['Sora']
+    underline
+    leading-3 hover:cursor-pointer mb-20">Esqueci a Senha</a>
+    <app-button-primary type="submit"></app-button-primary>
+  </form>
+
+  </div>
+</div>

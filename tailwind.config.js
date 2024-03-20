@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}", "./Aula4/*.{html,js}"],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
+    fontFamily:{
+      'sora': ['Sora', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],
